@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        maven 'jenkins_maven'
+        maven 'jenkins-maven'
     }
 
     stages {
@@ -38,7 +38,7 @@ pipeline {
               echo "****************"
               echo "Deploying JAR"
               echo "****************"
-              java -jar target/my-app-1.0-SNAPSHOT.jar
+              java -jar /var/jenkins_home/workspace/Jenkins-Maven-Java/target/my-app-1.0-SNAPSHOT.jar
             '''
 
           }
