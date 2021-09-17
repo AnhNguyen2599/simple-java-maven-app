@@ -39,6 +39,8 @@ pipeline {
               echo "Deploying JAR"
               echo "****************"
               java -jar /var/jenkins_home/workspace/Jenkins-Maven-Java/target/my-app-1.0-SNAPSHOT.jar
+              echo "****************"
+              echo "trigered from github webhook"
             '''
 
           }
